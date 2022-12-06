@@ -45,7 +45,7 @@
         max-width: 200px;
         background-color: #f692b5;
         border-radius: 5px;
-        border-color: #f692b5;
+        border: solid 1px #f692b5;
         font-size: 18px;
         text-decoration: none;
         color: white;
@@ -58,8 +58,9 @@
 
       a.button:hover {
         background-color: white;
-        border-color: white;
+        border: solid 1px white;
         color: #f692b5;
+        cursor: pointer;
       }
 
       p {
@@ -82,6 +83,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
         justify-content: center;
+        margin-top: 25px;
       }
 
       .image-gallery img {
@@ -104,11 +106,47 @@
         background-color: white;
         border-color: white;
         color: black;
+        cursor: pointer;
+      }
+
+      .dark-mode {
+        background-color: black;
+      }
+
+      .dark-mode h1,
+      .dark-mode h2 {
+        color: white;
+      }
+
+      .dark-mode button {
+        background-color: black;
+        border-color: white;
+        color: white;
+      }
+
+      .dark-mode button:hover {
+        background-color: white;
+        border-color: white;
+        color: black;
+        cursor: pointer;
+      }
+
+      .dark-mode a {
+        background-color: white;
+        border: solid 1px white;
+        color: black;
+      }
+
+      .dark-mode a:hover {
+        background-color: black;
+        border: solid 1px white;
+        color: white;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <button class="theme-button">Dark Mode</button>
+    <button class="theme-button">Change Theme</button>
     <h1>Rock Climbing 🧗🏻‍♀️</h1>
     <h2>A fun way to get strong & build confidence</h2>
     <a
@@ -121,16 +159,6 @@
         alt="Woman climbing an indoor rock wall"
       />
     </a>
-    <p>
-      Rock climbing is a sport in which participants climb up, across, or down
-      natural rock formations or artificial rock walls. The goal is to reach the
-      summit of a formation or the endpoint of a usually pre-defined route
-      without falling. Rock climbing is a physically and mentally demanding
-      sport, one that often tests a climber's strength, endurance, agility and
-      balance along with mental control. Knowledge of proper climbing techniques
-      and the use of specialized climbing equipment is crucial for the safe
-      completion of routes.
-    </p>
     <div class="image-gallery">
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/617/original/yente-van-eynde-4KhBmnviiwE-unsplash.jpg?1670283968"
@@ -145,6 +173,16 @@
         alt="Woman bouldering an outdoor rock formation"
       />
     </div>
+    <p>
+      Rock climbing is a sport in which participants climb up, across, or down
+      natural rock formations or artificial rock walls. The goal is to reach the
+      summit of a formation or the endpoint of a usually pre-defined route
+      without falling. Rock climbing is a physically and mentally demanding
+      sport, one that often tests a climber's strength, endurance, agility and
+      balance along with mental control. Knowledge of proper climbing techniques
+      and the use of specialized climbing equipment is crucial for the safe
+      completion of routes.
+    </p>
     <a
       class="button"
       href="https://www.mountainproject.com/gyms"
@@ -152,5 +190,15 @@
       >Find a Climbing Gym</a
     >
     <footer>Coded by Elise Raney</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        body.classList.toggle("dark-mode");
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>

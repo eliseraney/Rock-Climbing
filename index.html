@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Climbing</title>
+    <style>
+      body {
+        background-color: #008080;
+      }
+
+      h1,
+      h2,
+      p,
+      footer {
+        text-align: center;
+      }
+
+      h1 {
+        color: #afeeee;
+      }
+
+      h2 {
+        color: #f692b5;
+        font-size: 20px;
+      }
+
+      p,
+      footer {
+        color: white;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 5px;
+        transition: all 150ms ease-in-out;
+      }
+
+      a.button {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+        background-color: #f692b5;
+        border-radius: 5px;
+        border-color: #f692b5;
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        padding: 8px;
+        transition: 150ms;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      a.button:hover {
+        background-color: white;
+        border-color: white;
+        color: #f692b5;
+      }
+
+      p {
+        font-size: 16px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      footer {
+        font-size: 12px;
+        margin-top: 20px;
+      }
+
+      .main-photo:hover {
+        transform: scale(1.2);
+      }
+
+      .image-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-content: center;
+      }
+
+      .image-gallery img {
+        width: 100%;
+      }
+
+      .theme-button {
+        display: block;
+        margin: 0 auto;
+        background-color: black;
+        border-color: black;
+        border-radius: 5px;
+        padding: 5px;
+        color: white;
+        font-size: 12px;
+        transition: 150ms;
+      }
+
+      .theme-button:hover {
+        background-color: white;
+        border-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Dark Mode</button>
+    <h1>Rock Climbing 🧗🏻‍♀️</h1>
+    <h2>A fun way to get strong & build confidence</h2>
+    <a
+      href="https://riverrockclimbing.com/new-climbers/what-is-rock-climbing/"
+      target="_blank"
+    >
+      <img
+        class="main-photo"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/618/original/yns-plt-NY1D4Zni7fc-unsplash.jpg?1670283985"
+        alt="Woman climbing an indoor rock wall"
+      />
+    </a>
+    <p>
+      Rock climbing is a sport in which participants climb up, across, or down
+      natural rock formations or artificial rock walls. The goal is to reach the
+      summit of a formation or the endpoint of a usually pre-defined route
+      without falling. Rock climbing is a physically and mentally demanding
+      sport, one that often tests a climber's strength, endurance, agility and
+      balance along with mental control. Knowledge of proper climbing techniques
+      and the use of specialized climbing equipment is crucial for the safe
+      completion of routes.
+    </p>
+    <div class="image-gallery">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/617/original/yente-van-eynde-4KhBmnviiwE-unsplash.jpg?1670283968"
+        alt="Woman climbing an outdoor rock formation on a sunny day"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/640/original/bady-abbas-VmYZe_yqxL0-unsplash.jpg?1670287863"
+        alt="Woman climbing an indoor rock wall"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/615/original/x-N4QTBfNQ8Nk-unsplash.jpg?1670283959"
+        alt="Woman bouldering an outdoor rock formation"
+      />
+    </div>
+    <a
+      class="button"
+      href="https://www.mountainproject.com/gyms"
+      target="_blank"
+      >Find a Climbing Gym</a
+    >
+    <footer>Coded by Elise Raney</footer>
+  </body>
+</html>
